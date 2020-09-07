@@ -4,6 +4,12 @@
 #include <stddef.h>
 #include <stdbool.h>
 
+#ifdef _WIN32
+    #define SEPARATOR "\\"
+#else
+    #define SEPARATOR "/"
+#endif
+
 typedef struct {
     int i, j;
 } Pos;

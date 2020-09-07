@@ -24,7 +24,7 @@ State state_from_char(char c) {
             break;
 
         default:
-            fatal("Unknow State character '%c'", c);
+            fatal("Unknown State character '%c'", c);
     }
 
     return ret;
@@ -48,7 +48,7 @@ State state_to_char(State self) {
             break;
 
         default:
-            fatal("Unknow State '%d'", self);
+            fatal("Unknown State '%d'", self);
     }
 
     return ret;

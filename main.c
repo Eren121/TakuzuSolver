@@ -9,7 +9,7 @@ const char* get_puzzle_file_path(const char *argument) {
     int id = atoi(argument);
 
     if(id > 0 && id < 100) {
-        snprintf(tmp, sizeof(tmp), "../assets/puzzle%d.txt", id);
+        snprintf(tmp, sizeof(tmp), ".." SEPARATOR "assets" SEPARATOR "puzzle%d.txt", id);
         ret = tmp;
     }
 
